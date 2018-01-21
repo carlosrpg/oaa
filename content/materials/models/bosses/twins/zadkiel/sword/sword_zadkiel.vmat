@@ -1,0 +1,43 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "global_lit_simple.vfx"
+
+	//---- Ambient Occlusion Map ----
+	F_AO_MAP 1
+
+	//---- Normal Maps ----
+	F_NORMAL_MAP 1
+
+	//---- Specular ----
+	F_SPECULAR 1
+
+	//---- Ambient Occlusion Map ----
+	g_flGradientBottom "0.000"
+	g_flGradientColorMultiplier "1.000"
+	g_flGradientTop "200.000"
+	g_vAmbientOcclusionColor "[0.000000 0.000000 0.000000 0.000000]"
+	g_vGradientBottomColor "[0.000000 0.000000 0.000000 0.000000]"
+	g_vGradientTopColor "[1.000000 1.000000 1.000000 0.000000]"
+	TextureAmbientOcclusionMap "materials/models/bosses/twins/zadkiel/sword/sword_base_occ.png"
+
+	//---- Color ----
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	TextureColor "materials/models/bosses/twins/zadkiel/sword/sword_base_color.png"
+
+	//---- Normal Map ----
+	g_flBumpStrength "1.000"
+	TextureNormal "materials/models/bosses/twins/zadkiel/sword/sword_base_nrm.png"
+
+	//---- Self Illum ----
+	TextureSelfIllumMask "materials/models/bosses/twins/zadkiel/sword/sword_base_spec.png"
+
+	//---- Specular ----
+	g_flSpecularBloom "0.000"
+	g_flSpecularIntensity "1.575"
+	TextureBloom "materials/default/default_bloom.tga"
+	TextureReflectance "materials/models/bosses/twins/zadkiel/sword/sword_base_spec.png"
+}

@@ -8,12 +8,14 @@
     // General
     //
     "BaseClass"                                           "npc_dota_creep_neutral" // Class of entity of link to.
-    "Model"                                               "models\creeps\item_creeps\i_creep_necro_archer\necro_archer.vmdl"
+    "Model"                                               "models/bosses/twins/jophiel/jophiel.vmdl"  // Model.
     "SoundSet"                                            "Meepo"          // Name of sound set.
     "ModelScale"                                          "1"
     "Level"                                               "30"
     "IsAncient"                                           "1"
     "ConsideredHero"                                      "1"
+
+    "ProjectileModel"                                      "particles/units/heroes/hero_dazzle/dazzle_base_attack.vpcf"
 
     // Abilities
     //----------------------------------------------------------------
@@ -88,5 +90,10 @@
 
     "MinimapIcon"                                         "minimap_roshancamp"
     "MinimapIconSize"                                     "450"
+
+    "precache"
+    {
+      "particle"                                          "particles/units/heroes/hero_dazzle/dazzle_base_attack.vpcf"
+    }
   }
 }
