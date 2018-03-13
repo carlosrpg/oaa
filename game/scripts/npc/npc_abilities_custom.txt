@@ -76,3 +76,9 @@
 
 #base "abilities/fountain_attack.txt"
 #base "abilities/dev_attack.txt"
+
+#base "abilities/swiper/swiper_backswipe.txt"
+#base "abilities/swiper/swiper_thrust.txt"
+#base "abilities/swiper/swiper_frontswipe.txt"
+#base "abilities/swiper/swiper_reapers_rush.txt"
+#base "abilities/swiper/swiper_deathly_apparition.txt"

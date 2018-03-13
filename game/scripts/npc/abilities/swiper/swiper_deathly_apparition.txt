@@ -1,0 +1,46 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Swiper: Deathly Apparition
+  //=================================================================================================================
+  "swiper_deathly_apparition"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                                                  "5586"                            // unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+
+    "BaseClass"                                           "ability_lua"
+    "ScriptFile"                                          "abilities/swiper/swiper_backswipe.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"                              "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ALLIES_NO"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_PHYSICAL"
+    "MaxLevel"                                            "3"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "0"
+
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "300"
+    "AbilityCastPoint"                                    "0.4"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "12.0 10.0 8.0 6.0 6.0 6.0"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "115"
+
+    "AbilityDamage" "100 200 300 400 500"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+    }
+  }
+}

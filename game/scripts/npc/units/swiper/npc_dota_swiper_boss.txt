@@ -1,0 +1,94 @@
+"DOTAUnits"
+{
+  //=================================================================================
+	// Creature: Swiper Boss
+	//=================================================================================
+	"npc_dota_swiper_boss"
+	{
+		// Script
+		"vscripts"					"units/ai_swiper_boss.lua"
+
+		// General
+		//----------------------------------------------------------------
+		"Model"						  "models/heroes/antimage/antimage.vmdl"
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"Hero_Ogre"
+		"GameSoundsFile"		"soundevents/game_sounds_creeps.vsndevts"
+		"Level"						  "1"
+		"ModelScale" 				"2.1"
+    //"ConsideredHero"    "1"
+    //"IsAncient"         "1"
+    "IsBossMonster"     "1"
+
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"swiper_frontwipe"
+		"Ability2"					"swiper_backswipe"
+		"Ability3"					"swiper_thrust"
+		"Ability4"					"swiper_reapers_rush"
+		"Ability5"					"swiper_deathly_apparition"
+		"Ability6"          "boss_resistance"
+		"Ability7"          "boss_cliffwalk"
+		"Ability8"          "siltbreaker_boss_protection"
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"25"
+    "MagicalResistance"   "-25"            // Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		      "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"             "4687"
+    "AttackDamageMax"             "4687"
+		"AttackRate"				          "2.8"
+		"AttackAnimationPoint"		    "0.3"
+		"AttackAcquisitionRange"	    "1200"
+		"AttackRange"				          "1"
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			        "DOTA_HULL_SIZE_REGULAR"
+		"RingRadius"				          "100"
+		"HealthBarOffset"			        "360"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					          "1000"
+		"BountyGoldMin"				        "0"
+		"BountyGoldMax"				        "0"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		    "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				        "300"
+		"MovementTurnRate"			      "0.2"
+
+		// Status
+		//----------------------------------------------------------------
+    "StatusHealth"                "8500"
+    "StatusHealthRegen"           "5.0"
+		"StatusMana"				          "1000"
+		"StatusManaRegen"			        "5"
+
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		      "1200"
+		"VisionNighttimeRange"		    "1200"
+
+		// Team
+		//----------------------------------------------------------------
+    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			    "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			    "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "precache"
+    {
+      "soundfile"                                         "soundevents/bosses/game_sounds_dungeon_enemies.vsndevts"
+      "particle"                                          "particles/units/heroes/hero_ogre_magi/ogre_magi_bloodlust_cast.vpcf"
+      "particle"                                          "particles/test_particle/ogre_melee_smash.vpcf"
+    }
+	}
+}
