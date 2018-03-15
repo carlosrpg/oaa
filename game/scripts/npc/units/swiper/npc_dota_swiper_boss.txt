@@ -24,8 +24,8 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"swiper_frontswipe"
-		// "Ability2"					"swiper_backswipe"
-		// "Ability3"					"swiper_thrust"
+		"Ability2"					"swiper_backswipe"
+		"Ability3"					"swiper_thrust"
 		// "Ability4"					"swiper_reapers_rush"
 		// "Ability5"					"swiper_deathly_apparition"
 		"Ability6"          "boss_resistance"
