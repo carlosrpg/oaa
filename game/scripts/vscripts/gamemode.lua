@@ -89,6 +89,21 @@ require('components/index')
 ]]
 function GameMode:PostLoadPrecache()
   DebugPrint("[BAREBONES] Performing Post-Load precache")
+
+  for _,Item in pairs( g_ItemPrecache ) do
+    PrecacheItemByNameAsync( Item, function( item ) end )
+  end
+
+  for _,Unit in pairs( g_UnitPrecache ) do
+    PrecacheUnitByNameAsync( Unit, function( unit ) end )
+  end
+
+  Timers:CreateTimer(1, function()
+    -- Load the econ while on the picking screen
+    PrecacheUnitByNameAsync( "npc_dota_load_econ_dummy", function( unit )
+      print("Finish loading cosmetics")
+    end )
+  end)
   --PrecacheItemByNameAsync("item_example_item", function(...) end)
   --PrecacheItemByNameAsync("example_ability", function(...) end)
 
