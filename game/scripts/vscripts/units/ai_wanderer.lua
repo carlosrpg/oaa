@@ -291,6 +291,9 @@ function CheckPathBlocking ()
     thisEntity:AddNewModifier(thisEntity, nil, "modifier_batrider_firefly", {
       duration = 3
     })
+    thisEntity:AddNewModifier(thisEntity, nil, "modifier_wanderer_boss_buff", {
+      duration = 3
+    })
     ResetPathBlocking()
   end
 end

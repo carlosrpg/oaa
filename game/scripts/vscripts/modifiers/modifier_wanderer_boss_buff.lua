@@ -5,8 +5,13 @@ modifier_wanderer_boss_buff = class(ModifierBaseClass)
 
 function modifier_wanderer_boss_buff:DeclareFunctions()
   return {
-    MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE
+    MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE,
+    MODIFIER_PROPERTY_MODEL_CHANGE
   }
+end
+
+function modifier_wanderer_boss_buff:GetModifierModelChange( params )
+	return "models/courier/smeevil/smeevil_flying.vmdl"
 end
 
 function modifier_wanderer_boss_buff:GetModifierMoveSpeed_Absolute()

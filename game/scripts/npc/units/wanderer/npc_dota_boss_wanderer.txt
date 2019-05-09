@@ -9,10 +9,10 @@
     //
     "BaseClass"                                           "npc_dota_creature" // Class of entity of link to.
     // "Model"                                               "models/creeps/baby_rosh_halloween/baby_rosh_radiant/baby_rosh_radiant.vmdl"  // Model.
-    "Model"                                               "models/heroes/batrider/batrider.vmdl"  // Model.
+    "Model"                                               "models/courier/smeevil/smeevil.vmdl"  // Model.
     "vscripts"                                            "units/ai_wanderer.lua"
     "SoundSet"                                            "Batrider"          // Name of sound set.
-    "ModelScale"                                          "1.2"
+    "ModelScale"                                          "2"
     "Level"                                               "30"
     "IsAncient"                                           "1"
     "ConsideredHero"                                      "1"
@@ -74,14 +74,6 @@
     {
         //Makes it only have 50% remaining of applied crowd control
         "DisableResistance"                                 "50.0"
-        "AttachWearables" // Default npc_dota_hero_sven
-        {
-            "1" { "ItemDef" "375" } // Batrider's Head
-            "2" { "ItemDef" "376" } // Batrider's Cloak
-            "3" { "ItemDef" "377" } // Batrider's Belt
-            "4" { "ItemDef" "4557" } // Batrider's Mount
-            "5" { "ItemDef" "8366" } // All Heroes' Default Pet
-        }
     }
 
     // Team
